@@ -1,7 +1,8 @@
 const Discord = require("discord.js");
+require('dotenv').config();
 
+const token = process.env.DISCORD_KEY;
 const client = new Discord.Client();
-const token = '';
 
 client.on('ready', ()=>{
     console.log('bot is online');
