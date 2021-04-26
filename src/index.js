@@ -8,8 +8,6 @@ client.on('ready', ()=>{
     console.log('bot is online');
 })
 
-
-
 let fs = require("fs");
 let text = fs.readFileSync("./BadWords.txt").toString('utf-8')
 let set = text.split("\n")
